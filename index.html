@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation Process</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!--
+        1. Creer l'interface, les blocs, les boutons "radio" OK
+        2.Styliser le tout OK
+        3.Récuperer les données au clic 
+        4.Comparer les résultats
+        5. Afficher des phrases en fonction des résultats
+        6.Changer la couleur des blocs + animation en fonction des résultats
+
+    -->
+
+      <header>
+        <h1>FORMATION 2023</h1>
+
+        <h2>Questionnaire Process : 5 Questions</h2>
+      </header>
+
+      <main>
+        <form class="quizz">
+          <div class="form-quizz">
+            <h4>
+              Question n°1 : Quel est le principe de réaliser une sanitation de
+              la machine toutes les 12 et 24h ?
+            </h4>
+            <div>
+              <input type="radio" id="nettoyage" name="q1" value="1" />
+              <label for="nettoyage"
+                >De garder un état propre de la machine</label
+              >
+            </div>
+            <div>
+              <input type="radio" id="desinfecter" name="q1" value="2" />
+              <label for="desinfecter">Désinfecter la zone</label>
+            </div>
+            <div>
+              <input type="radio" id="72" name="q1" value="3" />
+              <label for="72">Pour faciliter le nettoyage des 72 heures</label>
+            </div>
+          </div>
+
+          <div class="form-quizz">
+            <h4>Quel est le rôle de la barrière vapeur?</h4>
+            <div>
+              <input type="radio" id="steam" name="q2" value="1" />
+              <label for="steam"
+                >De garder le circuit produit stérile en cas de défaut sur le
+                circuit</label
+              >
+            </div>
+            <div>
+              <input type="radio" id="steam2" name="q2" value="2" />
+              <label for="steam2">De continuer à stériliser le produit</label>
+            </div>
+            <div>
+              <input type="radio" id="ts" name="q2" value="3" />
+              <label for="ts">Pour protéger le lait dans le tank stérile</label>
+            </div>
+          </div>
+          <div class="form-quizz">
+            <h4>
+              Question n°4 :Quelle est la taille correct d'un cordon de
+              thermoscellage ?
+            </h4>
+            <div>
+              <input type="radio" id="1" name="q3" value="1" />
+              <label for="1">1 mm</label>
+            </div>
+            <div>
+              <input type="radio" id="2" name="q3" value="2" />
+              <label for="2">2 mm</label>
+            </div>
+            <div>
+              <input type="radio" id="3" name="q3" value="3" />
+              <label for="3">3 mm</label>
+            </div>
+          </div>
+          <div class="form-quizz">
+            <h4>
+              Question n°5 : Lors de la stérilisation en place, quel est le
+              circuit vapeur utilisé au niveau de la NEP ?
+            </h4>
+            <div>
+              <input type="radio" id="pd" name="q4" value="1" />
+              <label for="pd">Petit débit</label>
+            </div>
+            <div>
+              <input type="radio" id="gd" name="q4" value="2" />
+              <label for="gd">Grand débit</label>
+            </div>
+            <div>
+              <input type="radio" id="idem" name="q4" value="3" />
+              <label for="idem">Le même débit que le débit de production</label>
+            </div>
+          </div>
+
+          <div class="submit">
+            <button class="center buttonValidation" type="submit">
+              Validez vos choix
+            </button>
+          </div>
+        </form>
+
+        <div class="resultats">
+          <h2>
+            Cliquez sur Valider le questionnaire pour afficher vos résultats
+          </h2>
+          <p class="aide"></p>
+          <p class="note"></p>
+        </div>
+      </main>
+
+      <footer></footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
